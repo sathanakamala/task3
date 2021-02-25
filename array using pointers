@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,arr[5],*ptr;
+    ptr=arr;  //assigning pointer to array
+    cout<<"enter elements:\n";
+    //reading array elements:
+    for(i=0;i<5;i++)
+    {
+      cin>>ptr[i];
+    }
+    cout<<"you entered"<<endl;
+    //displaying array elements using pointer:
+    for(i=0;i<5;i++)
+    {
+       cout<<*ptr<<endl; 
+       ptr++;
+    }
+    return 0;
+}
+
+
+
+
+output:
+enter elements:
+1
+2
+3
+4
+5
+you entered:
+1
+2
+3
+4
+5
